@@ -1,6 +1,6 @@
-var sails = require('sails');
+var sails = require("sails");
 
-// Before running any tests...
+// Before running any tests...s
 before(function(done) {
 
   // Increase the Mocha timeout so that Sails has enough time to lift, even if you have a bunch of assets.
@@ -15,6 +15,7 @@ before(function(done) {
     hooks: { grunt: false },
     log: { level: 'warn' },
 
+
   }, function(err) {
     if (err) { return done(err); }
 
@@ -23,6 +24,7 @@ before(function(done) {
 
     return done();
   });
+  return done();
 });
 
 // After all tests have finished...

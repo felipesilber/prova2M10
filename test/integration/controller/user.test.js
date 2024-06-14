@@ -1,3 +1,5 @@
+var Users = require("../../../api/models/Users");
+
 const assert = require("assert");
 const controller = require("../../../api/controllers/UserController");
 const { mockAsync, RESPONSE, USER, FILE } = require("../../util/");
@@ -22,7 +24,7 @@ describe("UserController", () => {
     const findOneStub = mockAsync(Users, "findOne", USER);
     const req = {
       body: {
-        email: "",
+        email: "aaa@email.com",
         password: "password123",
       },
     };
